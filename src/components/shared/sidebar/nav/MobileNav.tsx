@@ -37,8 +37,8 @@ const MobileNav = () => {
                                             <TooltipContent
                                                 className={`
                                             bg-rose-100
-                                            border border-rose-300 dark:border-rose-700
-                                            shadow-lg shadow-rose-300/50 dark:shadow-rose-900/30
+                                            border border-rose-300 
+                                            shadow-lg shadow-rose-300/50 
                                             rounded-lg py-0.5 px-2
                                             animate-in fade-in-50 zoom-in-55
                                             data-[side=bottom]:slide-in-from-top-2
@@ -47,7 +47,7 @@ const MobileNav = () => {
                                             data-[side=right]:slide-in-from-left-2
                                         `}
                                             >
-                                                <p className="text-rose-700 text-sm dark:text-rose-100 font-medium">
+                                                <p className="text-rose-700 text-sm  font-medium">
                                                     {path.name}
                                                 </p>
                                             </TooltipContent>

@@ -61,8 +61,8 @@ const AddFriendDialog = () => {
                 <TooltipContent
                     className={`
                                             bg-rose-100 text-sm 
-                                            border border-rose-300 dark:border-rose-700
-                                            shadow-lg shadow-rose-300/50 dark:shadow-rose-900/30
+                                            border border-rose-300 
+                                            shadow-lg shadow-rose-300/50 
                                             rounded-lg py-1 px-1
                                             animate-in fade-in-50 zoom-in-55
                                             data-[side=bottom]:slide-in-from-top-2
@@ -71,13 +71,13 @@ const AddFriendDialog = () => {
                                             data-[side=right]:slide-in-from-left-2
                                         `}
                 >
-                    <p className="text-rose-700 text-[12px] dark:text-rose-100 font-medium">
+                    <p className="text-rose-700 text-[12px] font-medium">
                         Add Friends
                     </p>
                 </TooltipContent>
             </Tooltip>
 
-            <DialogContent className='sm:max-w-[425px] text-cad'>
+            <DialogContent className='sm:max-w-[425px] text-cad bg-white'>
                 <DialogHeader className='text-black'>
                     <DialogTitle className='text-rose-500'>Add Friend</DialogTitle>
                     <DialogDescription className="-ml-1 flex items-center gap-2 text-black/60">
@@ -104,7 +104,7 @@ const AddFriendDialog = () => {
                     <div className="space-y-1">
                         <label
                             htmlFor="email"
-                            className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                            className="block text-sm font-medium text-gray-700 "
                         >
                             Friend's Email
                         </label>
@@ -127,14 +127,14 @@ const AddFriendDialog = () => {
                                 placeholder="friend@example.com"
                                 className={`block w-full rounded-md border px-3 py-2 shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 ${errors.email
                                     ? "border-rose-500 text-rose-900 focus:ring-rose-500 bg-rose-50"
-                                    : "border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-800"
+                                    : "border-gray-300 focus:border-indigo-500 focus:ring-indigo-500  "
                                     }`}
                             />
                         </div>
 
                         {errors.email && (
                             <motion.p
-                                className="flex items-start gap-1.5 text-sm text-rose-600 dark:text-rose-400"
+                                className="flex items-start gap-1.5 text-sm text-rose-600 "
                                 initial={{ opacity: 0, y: -10 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ type: "spring", stiffness: 300 }}
