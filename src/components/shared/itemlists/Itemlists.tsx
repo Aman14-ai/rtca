@@ -10,7 +10,7 @@ type Props = React.PropsWithChildren<{
 
 const Itemlists = ({ children, title, action: Action }: Props) => {
     return (
-        <Card className="bg-cad border-none w-full md:max-w-[370px] h-screen lg:h-[100vh] lg:max-w-[500px] lg:ml-0 p-4 ">
+        <Card className="bg-cad mb-4 border-none w-full md:max-w-[370px] h-screen lg:h-[100vh] lg:max-w-[500px] lg:ml-0 p-4 overflow-y-scroll ">
             <AnimatedNameLogo />
             <div className="flex flex-col gap-4 lg:max-w-[500px] w-full h-full">
 

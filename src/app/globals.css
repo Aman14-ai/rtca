@@ -187,3 +187,7 @@ body{
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+body{
+  overflow-y: scroll;
+}

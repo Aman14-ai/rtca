@@ -79,9 +79,7 @@ const Requests = ({ id, imageUrl, username, email }: Props) => {
                         src={imageUrl || "/default-avatar.jpg"}
                         alt="Profile"
                         className="h-11 w-11 object-cover transition-all duration-300 group-hover:scale-110"
-                        onError={(e) => {
-                            (e.target as HTMLImageElement).src = "/default-avatar.jpg";
-                        }}
+                        
                     />
 
                     {!imageUrl && (
